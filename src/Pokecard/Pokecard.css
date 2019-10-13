@@ -1,6 +1,7 @@
 .Pokecard {
     border: 1px solid black;
-    width: 200px;
+    width: 20%;
+    display: inline-block;
     margin: 20px;
     text-align: center;
 }

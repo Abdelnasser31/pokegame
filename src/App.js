@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Pokecard from './Pokecard/Pokecard';
+import Pokedex from './Pokedex/Pokedex';
 
 function App() {
   return (
@@ -8,7 +8,8 @@ function App() {
       <header className="App-header">
       <h1>Pokemon app</h1>
       </header>
-      <Pokecard />
+      <Pokedex />
+  
     </div>
   );
 }
