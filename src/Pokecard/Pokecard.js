@@ -18,7 +18,6 @@ handleId(id) {
         <h1 className="Pokecard-name">{name}</h1>
         <img
           src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${this.handleId(id)}.png`}/>
-       {console.log(this.handleId(id))}
         <p>Type: {type}</p>
         <p>EXP: {base_experience}</p>
       </div>
