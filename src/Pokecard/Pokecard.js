@@ -28,10 +28,4 @@ export class Pokecard extends Component {
   }
 }
 
-Pokecard.defaultProps = {
-  name: 'Pikachu',
-  id: '25',
-  type: 'electric',
-  base_experience: 72
-}
 export default Pokecard;
