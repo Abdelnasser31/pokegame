@@ -1,5 +1,5 @@
 .Pokecard {
-    width: 15%;
+    width: 18%;
     display: inline-block;
 
     text-align: center;
@@ -10,7 +10,17 @@
 
 
 .Pokecard-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:#ededed;
     margin: 6px;
     width: 95%;
+    transition: all 0.3s ease-in-out;
+}
+.Pokecard-image img{
+    transition: all 0.3s ease;
+}
+.Pokecard-image img:hover{
+    transform: scale(1.16);
 }
