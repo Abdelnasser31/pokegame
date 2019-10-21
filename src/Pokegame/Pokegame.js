@@ -20,17 +20,18 @@ export class Pokegame extends Component {
         const data2 = data.slice(4);
         const data1Exp = data1.reduce((a, b) => a + b.base_experience, 0);
         const data2Exp = data2.reduce((a, b) => a + b.base_experience, 0);
+        const isWinner = data1Exp > data2Exp;
         return (
             <div className='Pokegame'>
-                <div className = {data1Exp > data2Exp ? 'Pokegame-winner' : 'Pokegame-loser'}>
-                {(data1Exp > data2Exp ) ?  <h1>Winner {data1Exp}</h1> : <h1>Loser {data1Exp}</h1>}
+                
+                {isWinner ? <h1 className='Pokegame-winner'>Winning Hand</h1> : <h1 className='Pokegame-loser'>Losing Hand</h1>}
+                <h3 className='Pokegame-exp'>Total Exp: {data1Exp} </h3>
                 <Pokedex data = {data1} />
-                </div>
-                <hr />
-                <div className = {!(data1Exp > data2Exp ) ? 'Pokegame-winner' : 'Pokegame-loser'} >
-                {!(data1Exp > data2Exp ) ?  <h1>Winner {data2Exp}</h1> : <h1>Loser {data2Exp}</h1>}
+            
+                {!isWinner ? <h1 className='Pokegame-winner'>Winning Hand</h1> : <h1 className='Pokegame-loser'>Losing Hand</h1>}
+                <h3 className='Pokegame-exp'>Total Exp: {data2Exp} </h3>
                 <Pokedex data = {data2}/> 
-                </div>
+                
             </div>
         );
     }

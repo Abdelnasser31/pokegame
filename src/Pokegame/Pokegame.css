@@ -2,8 +2,13 @@
     text-align: center;
 }
 .Pokegame-winner {
-    border: 3px solid green;
+    padding-top: 20px;
+    color: green;
 }
 .Pokegame-loser { 
-    border: 3px solid red;
+    padding-top: 20px;
+    color: red;
+}
+.Pokegame-exp {
+    padding-bottom: 20px;
 }
