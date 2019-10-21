@@ -11,7 +11,6 @@ export class Pokegame extends Component {
             currentIndex -= 1;
             [this.props.data[currentIndex], this.props.data[randomIndex]] = [this.props.data[randomIndex], this.props.data[currentIndex]]
         }
-        this.props.winner.push(data.reduce((a,b) => a + b.base_experience, 0));
         return data;
     }
     render() {
@@ -46,7 +45,6 @@ Pokegame.defaultProps = {
         {id: 39, name: 'Jigglypuff', type: 'normal', base_experience: 95},
         {id: 94, name: 'Gengar', type: 'poison', base_experience: 225},
         {id: 133, name: 'Eevee', type: 'normal', base_experience: 65}
-      ],
-      winner: []
+      ]
 }
 export default Pokegame;
