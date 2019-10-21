@@ -6,3 +6,6 @@
 .App {
   background-color: #ededed;
 }
+h3,p{
+  padding-bottom: 10px;
+}
