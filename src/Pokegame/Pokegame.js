@@ -32,16 +32,16 @@ export class Pokegame extends Component {
         const data1Exp = data1.reduce((a, b) => a + b.base_experience, 0);
         const data2Exp = data2.reduce((a, b) => a + b.base_experience, 0);
         const isWinner = data1Exp > data2Exp;
+        
+        
         return (
             <div className='Pokegame'>
                 
-                {isWinner ? <h1 className='Pokegame-winner'>Winning Hand</h1> : <h1 className='Pokegame-loser'>Losing Hand</h1>}
-                <h3 className='Pokegame-exp'>Total Exp: {data1Exp} </h3>
-                <Pokedex data = {data1} />
-            
-                {!isWinner ? <h1 className='Pokegame-winner'>Winning Hand</h1> : <h1 className='Pokegame-loser'>Losing Hand</h1>}
-                <h3 className='Pokegame-exp'>Total Exp: {data2Exp} </h3>
-                <Pokedex data = {data2}/> 
+                
+                <Pokedex data = {data1} winner={isWinner} Exp={data1Exp}/>
+
+                
+                <Pokedex data = {data2} winner={!isWinner} Exp={data2Exp}/> 
                 
             </div>
         );
