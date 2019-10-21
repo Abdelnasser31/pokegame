@@ -9,7 +9,7 @@ export class Pokecard extends Component {
   //   }else if(Math.floor(id / 100) === 0){        return `0${id}`    }    return
   // id }
   render() {
-    const {name, id, type, base_experience} = this.props
+    const {name, id, type, base_experience} = this.props;
     let imgSrc = `${POKE_API}${padToThree(id)}.png`
     return (
       <div className="Pokecard">

@@ -22,7 +22,7 @@ export class Pokedex extends Component {
                 {data.map(pokemon => 
                     <Pokecard id = {pokemon.id}
                               name = {pokemon.name}
-                              type = {pokemon.type}
+                              type = {pokemon.types[0].type.name}
                               base_experience = {pokemon.base_experience}
                               />
                 )}
