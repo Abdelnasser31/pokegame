@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Pokecard from '../Pokecard/Pokecard';
 import './Pokedex.css';
 export class Pokedex extends Component {
+    
     render() {
         const {data} = this.props
         return (

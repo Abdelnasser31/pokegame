@@ -1,0 +1,9 @@
+.Pokegame {
+    text-align: center;
+}
+.Pokegame-winner {
+    border: 3px solid green;
+}
+.Pokegame-loser { 
+    border: 3px solid red;
+}
