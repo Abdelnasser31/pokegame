@@ -11,4 +11,5 @@ Practice Props
 fetch the pokemons from an API "https://pokeapi.co/api/v2/"
 
   
-
+## Depolying
+Deployed with gh-pages "https://abdelnasser31.github.io/pokegame-react/"
