@@ -6,3 +6,9 @@ This porject is for practicing React following the React Course by Colt Steele O
 
 Practice Props
 
+## Extra challenge and addtional value
+
+fetch the pokemons from an API "https://pokeapi.co/api/v2/"
+
+  
+
